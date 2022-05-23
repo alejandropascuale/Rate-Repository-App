@@ -1,11 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import RepositoryItem from './src/components/RepositoryItem';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>My first app with Expo</Text>
-      <StatusBar style="auto" />
+      <RepositoryItem />
     </View>
   );
 }
