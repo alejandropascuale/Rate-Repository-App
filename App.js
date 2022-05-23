@@ -1,19 +1,8 @@
-import { StyleSheet, View } from 'react-native';
-import RepositoryItem from './src/components/RepositoryItem';
+import React from 'react'
+import Main from './src/components/Main.jsx';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <RepositoryItem />
-    </View>
-  );
+    <Main />
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
