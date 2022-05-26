@@ -11,20 +11,20 @@ const parseThousands = value => {
   return (
     <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
         <View>
-          <SyledText align='center' fontWeight='bold'>Stars</SyledText>
-          <SyledText align='center'>{parseThousands(data.stargazersCount)}</SyledText>
+          <SyledText fontWeight='bold' align='center'>{parseThousands(data.stargazersCount)}</SyledText>
+          <SyledText align='center'>Stars</SyledText>
         </View>
         <View>
-          <SyledText align='center' fontWeight='bold'>Forks</SyledText>
-          <SyledText align='center'>{parseThousands(data.forksCount)}</SyledText>
+          <SyledText fontWeight='bold' align='center'>{parseThousands(data.forksCount)}</SyledText>
+          <SyledText align='center'>Forks</SyledText>
         </View>
         <View>
-          <SyledText align='center' fontWeight='bold'>Review</SyledText>
-          <SyledText align='center'>{data.reviewCount}</SyledText>
+          <SyledText fontWeight='bold' align='center'>{data.reviewCount}</SyledText>
+          <SyledText align='center'>Review</SyledText>
         </View>
         <View>
-          <SyledText align='center' fontWeight='bold'>Rating</SyledText>
-          <SyledText align='center'>{data.ratingAverage}</SyledText>
+          <SyledText fontWeight='bold' align='center'>{data.ratingAverage}</SyledText>
+          <SyledText align='center'>Rating</SyledText>
         </View>
     </View>
   )
