@@ -33,7 +33,8 @@ export default function SyledText ({ children, align, color, fontSize, fontWeigh
         color === 'secondary' && styles.colorSecondary,
         fontSize === 'subheading' && styles.subheading,
         fontWeight === 'bold' && styles.bold,
-        align === 'center' && styles.align
+        align === 'center' && styles.align,
+        style
     ]
     return <Text style={textStyles} {...restOfProps}>
         {children}
