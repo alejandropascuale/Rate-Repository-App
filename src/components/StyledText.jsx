@@ -20,16 +20,20 @@ const styles = StyleSheet.create({
     },
     subheading: {
         fontSize: theme.fontSizes.subheading    
+    },
+    align: {
+        textAlign: 'center'
     }
 })
 
-export default function SyledText ({ children, color, fontSize, fontWeight, style, ...restOfProps }) {
+export default function SyledText ({ children, align, color, fontSize, fontWeight, style, ...restOfProps }) {
     const textStyles = [
         styles.text,
         color === 'primary' && styles.colorPrimary,
         color === 'secondary' && styles.colorSecondary,
         fontSize === 'subheading' && styles.subheading,
-        fontWeight === 'bold' && styles.bold
+        fontWeight === 'bold' && styles.bold,
+        align === 'center' && styles.align
     ]
     return <Text style={textStyles} {...restOfProps}>
         {children}
