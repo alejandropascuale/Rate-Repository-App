@@ -20,12 +20,14 @@ export default function AppBar({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: theme.AppBar.primary,
-        paddingTop: Constants.statusBarHeight + 10,
+        paddingTop: Constants.statusBarHeight,
         paddingBottom: 10,
         paddingLeft: 10,
         flexDirection: 'row'
     },
     text: {
-        color: theme.AppBar.primaryText
+        color: theme.AppBar.primaryText,
+        paddingRight: 10,
+        fontSize: 16
     }
 })
