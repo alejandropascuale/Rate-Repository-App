@@ -1,21 +1,18 @@
 import React from 'react'
 import { View, StyleSheet, Button } from 'react-native'
+import { Link } from '@react-navigation/native';
 import theme from '../theme'
 import Constants from 'expo-constants'
 
 export default function AppBar({ navigation }) {
   return (
     <View style={styles.container}>
-        <Button
-            fontWeight='bold' style={styles.text}
-            title="Repositories"
-            onPress={() => navigation.navigate('Repositories')}
-        />
-        <Button
-            fontWeight='bold' style={styles.text}
-            title="Sign in"
-            onPress={() => navigation.navigate('Sign in')}
-        />
+        <Link to={{ screen: 'Repositories' }} fontWeight='bold' style={styles.text}>
+            Repositories
+        </Link>
+        <Link to={{ screen: 'Sign in' }} fontWeight='bold' style={styles.text}>
+            Sign In
+        </Link>
     </View>
   )
 }
