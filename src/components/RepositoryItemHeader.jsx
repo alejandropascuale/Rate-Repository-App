@@ -5,11 +5,15 @@ import theme from '../theme'
 
 export default function RepositoryItemHeader({ data }) {
   return (
-    <View>
-      <Image style={styles.image} source={{ uri: data.ownerAvatarUrl }} />
-      <SyledText fontSize='subheading' fontWeight='bold'>{data.fullName}</SyledText>
-      <SyledText>{data.description}</SyledText>
-      <SyledText style={styles.language}>{data.language}</SyledText>
+    <View style={{ flexDirection: 'row', paddingBottom: 2 }}>
+        <View style={{ paddingRight: 10 }}>
+            <Image style={styles.image} source={{ uri: data.ownerAvatarUrl }} />
+        </View>
+      <View style={{ flex: 1, justifyContent: 'center' }}>
+        <SyledText fontWeight='bold'>{data.fullName}</SyledText>
+        <SyledText color='secondary'>{data.description}</SyledText>
+        <SyledText style={styles.language}>{data.language}</SyledText>
+      </View>
     </View>
   )
 }
@@ -22,6 +26,7 @@ const styles = StyleSheet.create({
   },
   language: {
     padding: 4,
+    marginVertical: 4,
     color: theme.colors.withe,
     backgroundColor: theme.colors.primary,
     alignSelf: 'flex-start',
