@@ -8,13 +8,13 @@ export default function AppBar({ navigation }) {
     <View style={styles.container}>
         <Button
             fontWeight='bold' style={styles.text}
-            title="Repositores"
+            title="Repositories"
             onPress={() => navigation.navigate('Repositories')}
         />
         <Button
             fontWeight='bold' style={styles.text}
             title="Sign in"
-            onPress={() => navigation.navigate('Signin')}
+            onPress={() => navigation.navigate('Sign in')}
         />
     </View>
   )
