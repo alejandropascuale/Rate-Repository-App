@@ -1,15 +1,21 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
-import SyledText from './StyledText'
+import { View, StyleSheet, Button } from 'react-native'
 import theme from '../theme'
 import Constants from 'expo-constants'
 
-export default function AppBar() {
+export default function AppBar({ navigation }) {
   return (
     <View style={styles.container}>
-        <SyledText fontWeight='bold' style={styles.text}>
-            Repositories
-        </SyledText>
+        <Button
+            fontWeight='bold' style={styles.text}
+            title="Repositores"
+            onPress={() => navigation.navigate('Repositories')}
+        />
+        <Button
+            fontWeight='bold' style={styles.text}
+            title="Sign in"
+            onPress={() => navigation.navigate('Signin')}
+        />
     </View>
   )
 }
@@ -19,7 +25,8 @@ const styles = StyleSheet.create({
         backgroundColor: theme.AppBar.primary,
         paddingTop: Constants.statusBarHeight + 10,
         paddingBottom: 10,
-        paddingLeft: 10
+        paddingLeft: 10,
+        flexDirection: 'row'
     },
     text: {
         color: theme.AppBar.primaryText
