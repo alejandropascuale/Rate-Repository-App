@@ -8,7 +8,7 @@ export default [
         stargazersCount: 4168,
         ratingAverage: 5.4,
         reviewCount: 4,
-        ownerAvatarUrl: 'https://unsplash.com/es/fotos/mEZ3PoFGs_k'
+        ownerAvatarUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
     },
         {
         id: 2,
@@ -19,7 +19,7 @@ export default [
         stargazersCount: 481,
         ratingAverage: 7.1,
         reviewCount: 1,
-        ownerAvatarUrl: 'https://unsplash.com/es/fotos/WNoLnJo7tS8'
+        ownerAvatarUrl: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880'
     },
         {
         id: 3,
@@ -30,7 +30,7 @@ export default [
         stargazersCount: 412,
         ratingAverage: 8.2,
         reviewCount: 61,
-        ownerAvatarUrl: 'https://unsplash.com/es/fotos/ZHvM3XIOHoE'
+        ownerAvatarUrl: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
     },
         {
         id: 4,
@@ -41,7 +41,7 @@ export default [
         stargazersCount: 989,
         ratingAverage: 6.4,
         reviewCount: 1,
-        ownerAvatarUrl: 'https://unsplash.com/es/fotos/C8Ta0gwPbQg'
+        ownerAvatarUrl: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
     },
         {
         id: 5,
@@ -52,7 +52,7 @@ export default [
         stargazersCount: 7456,
         ratingAverage: 6.9,
         reviewCount: 687,
-        ownerAvatarUrl: 'https://unsplash.com/es/fotos/iEEBWgY_6lA'
+        ownerAvatarUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500'
     },
         {
         id: 6,
@@ -63,7 +63,7 @@ export default [
         stargazersCount: 56,
         ratingAverage: 4.3,
         reviewCount: 0,
-        ownerAvatarUrl: 'https://unsplash.com/es/fotos/MTZTGvDsHFY'
+        ownerAvatarUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500'
     },
         {
         id: 7,
@@ -74,7 +74,7 @@ export default [
         stargazersCount: 7,
         ratingAverage: 5.1,
         reviewCount: 1,
-        ownerAvatarUrl: 'https://unsplash.com/es/fotos/IF9TK5Uy-KI'
+        ownerAvatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500'
     },
         {
         id: 8,
@@ -85,7 +85,7 @@ export default [
         stargazersCount: 63,
         ratingAverage: 6.5,
         reviewCount: 7,
-        ownerAvatarUrl: 'https://unsplash.com/es/fotos/rDEOVtE7vOs'
+        ownerAvatarUrl: 'https://images.unsplash.com/photo-1628890920690-9e29d0019b9b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500'
     },
         {
         id: 9,
@@ -96,7 +96,7 @@ export default [
         stargazersCount: 10,
         ratingAverage: 6,
         reviewCount: 0,
-        ownerAvatarUrl: 'https://unsplash.com/es/fotos/6anudmpILw4'
+        ownerAvatarUrl: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500'
     },
         {
         id: 10,
@@ -107,7 +107,7 @@ export default [
         stargazersCount: 91,
         ratingAverage: 7.9,
         reviewCount: 486,
-        ownerAvatarUrl: 'https://unsplash.com/es/fotos/0J9l9xRyMSo'
+        ownerAvatarUrl: 'https://images.unsplash.com/photo-1629467057571-42d22d8f0cbd?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500'
     },
         {
         id: 11,
@@ -118,7 +118,7 @@ export default [
         stargazersCount: 11,
         ratingAverage: 6.2,
         reviewCount: 2,
-        ownerAvatarUrl: 'https://unsplash.com/es/fotos/DItYlc26zVI'
+        ownerAvatarUrl: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500'
     },
         {
         id: 12,
@@ -129,6 +129,6 @@ export default [
         stargazersCount: 3,
         ratingAverage: 4,
         reviewCount: 0,
-        ownerAvatarUrl: 'https://unsplash.com/es/fotos/iFgRcqHznqg'
+        ownerAvatarUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500'
     },
 ]
