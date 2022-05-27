@@ -1,12 +1,12 @@
 import React from 'react'
 import Main from './src/components/Main.jsx'
-import { NavigationContainer } from '@react-navigation/native';
+import { NativeRouter } from 'react-router-native'
 
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <NativeRouter>
       <Main />
-    </NavigationContainer>
+    </NativeRouter>
   )
 }
