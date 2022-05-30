@@ -1,10 +1,10 @@
 import React from 'react'
-import { View, StyleSheet, Button } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import { Link } from '@react-navigation/native';
 import theme from '../theme'
 import Constants from 'expo-constants'
 
-export default function AppBar({ navigation }) {
+export default function AppBar() {
   return (
     <View style={styles.container}>
         <Link to={{ screen: 'Repositories' }} fontWeight='bold' style={styles.text}>
