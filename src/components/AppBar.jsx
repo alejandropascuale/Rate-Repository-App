@@ -4,20 +4,21 @@ import { Link } from '@react-navigation/native';
 import theme from '../theme'
 import Constants from 'expo-constants'
 import StyledText from './StyledText.jsx'
-/* import { useLocation } from 'react-router-dom' */
+/* import { useRoute } from '@react-navigation/native'; */
 
 const AppBarTab = ({ children, to }) => {
-    /* const { pathname } = useLocation()
-    const active = pathname == to */
+    
+    /* const route = useRoute();
+    const active = route.name === to
     
     const textStyles = [
         styles.text,
-        /* active && styles.active */
-    ]
+        active && styles.active
+    ] */
     
     return (
-        <Link to={to}>
-            <StyledText fontWeight='bold' style={textStyles}>
+        <Link to={to} style={{ paddingHorizontal: 8 }}>
+            <StyledText fontWeight='bold' style={styles.text}>
                 {children}
             </StyledText>
         </Link>
@@ -27,7 +28,7 @@ const AppBarTab = ({ children, to }) => {
 export default function AppBar() {
   return (
     <View style={styles.container}>
-        <ScrollView horizontal>
+        <ScrollView horizontal style={styles.scroll}>
             <AppBarTab to={{ screen: 'Sign in'  }}>
                 Sign in
             </AppBarTab>
@@ -43,24 +44,6 @@ export default function AppBar() {
             <AppBarTab to={{ screen: 'Information'  }}>
                 Information
             </AppBarTab>
-            {/* <Link active to={{ screen: 'Repositories' }} fontWeight='bold'>
-                Repositories
-            </Link>
-            <Link to={{ screen: 'Sign in' }} fontWeight='bold'>
-                Sign In
-            </Link>
-            <Link to={{ screen: 'Register' }} fontWeight='bold'>
-                Register
-            </Link>
-            <Link to={{ screen: 'Account' }} fontWeight='bold'>
-                My Account
-            </Link>
-            <Link to={{ screen: 'Account' }} fontWeight='bold'>
-                Share
-            </Link>
-            <Link to={{ screen: 'Account' }} fontWeight='bold'>
-                Help
-            </Link> */}
         </ScrollView>
     </View>
   )
@@ -69,16 +52,17 @@ export default function AppBar() {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: theme.AppBar.primary,
+        flexDirection: 'row',
         paddingTop: Constants.statusBarHeight,
         paddingBottom: 10,
-        paddingLeft: 10,
-        justifyContent: 'space-around',
-        flexDirection: 'row'
     },
     text: {
-        color: theme.AppBar.secondaryText,
+        color: theme.AppBar.primaryText,
+        paddingHorizontal: 10
+    },
+    scroll: {
         paddingHorizontal: 10,
-        fontSize: 16
+        paddingBottom: 15,
     },
     active: {
         color: theme.AppBar.primaryText
