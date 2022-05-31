@@ -53,8 +53,8 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: theme.AppBar.primary,
         flexDirection: 'row',
-        paddingTop: Constants.statusBarHeight,
-        paddingBottom: 10,
+        paddingTop: 20,
+        paddingBottom: 20,
     },
     text: {
         color: theme.AppBar.primaryText,
