@@ -1,6 +1,6 @@
 import React from 'react'
 import { Formik } from 'formik'
-import { Button, TextInput, View } from 'react-native'
+import { Button, View } from 'react-native'
 import StyledTextInput from '../components/StyledTextInput'
 
 const initialValues = {
