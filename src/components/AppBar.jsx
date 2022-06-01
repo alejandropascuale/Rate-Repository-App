@@ -29,7 +29,7 @@ export default function AppBar() {
   return (
     <View style={styles.container}>
         <ScrollView horizontal style={styles.scroll}>
-            <AppBarTab to={{ screen: 'Sign in'  }}>
+            <AppBarTab to={{ screen: 'Login'  }}>
                 Sign in
             </AppBarTab>
             <AppBarTab to={{ screen: 'Register'  }}>
