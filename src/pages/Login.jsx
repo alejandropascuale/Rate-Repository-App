@@ -1,6 +1,7 @@
 import React from 'react'
 import { Formik } from 'formik'
 import { Button, TextInput, View } from 'react-native'
+import StyledTextInput from '../components/StyledTextInput'
 
 const initialValues = {
   email: '',
@@ -13,8 +14,8 @@ export default function Login() {
         {({ handleChange, handleSubmit, values }) => {
           return (
             <View>
-              <TextInput placeholder='Email' value={values.email} onChangeText={handleChange('email')} />
-              <TextInput placeholder='Password' value={values.password} onChangeText={handleChange('password')} />
+              <StyledTextInput placeholder='Email' value={values.email} onChangeText={handleChange('email')} />
+              <StyledTextInput placeholder='Password' value={values.password} onChangeText={handleChange('password')} />
               <Button title='Log in' onPress={handleSubmit} ></Button>
             </View>
           )
