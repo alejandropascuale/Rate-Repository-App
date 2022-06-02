@@ -8,15 +8,21 @@ const initialValues = {
   password: ''
 }
 
-const styles = StyleSheet.create({
-  form: {
-    margin: 10
+const validate = values => {
+  const errors = {}
+
+  if(!values.email) {
+    errors.email = 'Email is required'
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9*-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = 'Invalid email address'
   }
-})
+  console.log(errors)
+  return errors
+}
 
 export default function Login() {
   return (
-    <Formik initialValues={initialValues} onSubmit={values => console.log(values)}>
+    <Formik validate={validate} initialValues={initialValues} onSubmit={values => console.log(values)}>
         {({ handleSubmit }) => {
           return (
             <View style={styles.form}>
@@ -29,3 +35,9 @@ export default function Login() {
     </Formik>
   )
 }
+
+const styles = StyleSheet.create({
+  form: {
+    margin: 10
+  }
+})
