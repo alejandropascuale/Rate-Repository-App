@@ -1,7 +1,7 @@
 import React from 'react'
 import { Formik } from 'formik'
 import { Button, StyleSheet, View } from 'react-native'
-import StyledTextInput from '../components/StyledTextInput'
+import FormikInputValue from '../components/FormikInputValue'
 
 const initialValues = {
   email: '',
@@ -17,11 +17,11 @@ const styles = StyleSheet.create({
 export default function Login() {
   return (
     <Formik initialValues={initialValues} onSubmit={values => console.log(values)}>
-        {({ handleChange, handleSubmit, values }) => {
+        {({ handleSubmit }) => {
           return (
             <View style={styles.form}>
-              <StyledTextInput placeholder='Email' value={values.email} onChangeText={handleChange('email')} />
-              <StyledTextInput placeholder='Password' value={values.password} onChangeText={handleChange('password')} />
+              <FormikInputValue name={'email'} placeholder='Email' />
+              <FormikInputValue name={'password'} placeholder='Password' />
               <Button title='Log in' onPress={handleSubmit} ></Button>
             </View>
           )
