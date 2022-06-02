@@ -10,7 +10,8 @@ export default function FormikInputValue({ name, ...props }) {
       <>
         <StyledTextInput 
             value={field.value} 
-            onChangeText={value => helpers.setValue(value)} 
+            onChangeText={value => helpers.setValue(value)}
+            error={meta.error}  
             { ...props }
         />
         { meta.error && <StyledText style={styles.error}>{ meta.error }</StyledText> }
