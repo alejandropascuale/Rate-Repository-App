@@ -21,7 +21,7 @@ export default function Login() {
           return (
             <View style={styles.form}>
               <FormikInputValue name={'email'} placeholder='Email' />
-              <FormikInputValue name={'password'} placeholder='Password' />
+              <FormikInputValue name={'password'} placeholder='Password' secureTextEntry />
               <Button title='Log in' onPress={handleSubmit} ></Button>
             </View>
           )
